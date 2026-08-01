@@ -600,6 +600,87 @@ p { margin: 0 0 1em; }
 }
 
 /* ==========================================================================
+   Data tables (accommodation / pricing)
+   ========================================================================== */
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  min-width: 480px;
+}
+
+.data-table caption {
+  text-align: left;
+  font-weight: 600;
+  padding: 0.85rem 1rem 0;
+  color: var(--color-navy-900);
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.data-table thead th {
+  background: var(--color-sand-50);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table td:first-child,
+.data-table th:first-child {
+  font-weight: 600;
+  color: var(--color-navy-900);
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.25rem 0;
+}
+
+.badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: var(--color-sand-100);
+  color: var(--color-rose-700);
+  border: 1px solid var(--color-sand-200);
+}
+
+.differentiator-note {
+  background: var(--color-sand-50);
+  border-left: 3px solid var(--color-rose-600);
+  padding: 1rem 1.25rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.differentiator-note strong {
+  color: var(--color-rose-700);
+}
+
+/* ==========================================================================
    Blog
    ========================================================================== */
 
